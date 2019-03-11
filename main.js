@@ -30,7 +30,7 @@ function createStart () {
   startWin = new BrowserWindow({ width: 969, height: 545 })
 
   // and load the index.html of the app.
-  startWin.loadFile('startScreen.html')
+  startWin.loadFile('mainpage.html')
   // Open the DevTools.
  win.webContents.openDevTools()
 
