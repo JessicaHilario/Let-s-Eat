@@ -18,11 +18,11 @@
 			  border-radius: 1em;
 			}
 			img {
-			display: block;
-			margin-left: auto;
-			margin-right: auto;
-			max-width:30%;
-  			max-height:30%;
+			  display: block;
+			  margin-left: auto;
+			  margin-right: auto;
+			  max-width:30%;
+			  max-height:30%;
 			}
 			label {
 			  /* To make sure that all labels have the same size and are properly aligned */
@@ -52,12 +52,11 @@
 	 	alt="Let's Eat Logo">
     	</a>
     	    	
-    	<link href='https://fonts.googleapis.com/css?family=Open+Sans:700,600' rel='stylesheet' type='text/css'>
-
 		<form method="post" action="index.html">
 		<div class="box">
-		<h1><center>Sign Up Page</center></h1>
+		<h1><center>Sign Up</center></h1>
 
+		<!-- User info -->
 		<label for="username">Username: </label><input type="Username" name="Username" value="" onFocus="field_focus(this, 'Username');" onblur="field_blur(this, 'Username');" class="Username" />
 		<label for="first name">First Name: </label><input type="First Name" name="First Name" value="" onFocus="field_focus(this, 'First Name');" onblur="field_blur(this, 'First Name');" class="First Name" />
 		<label for="last name">Last Name: </label><input type="Last Name" name="Last Name" value="" onFocus="field_focus(this, 'Last Name');" onblur="field_blur(this, 'Last Name');" class="Last Name" />
@@ -68,11 +67,22 @@
 		<label for="secq">Security Question: </label><input type="Security Question" name="Security Question" value="" onFocus="field_focus(this, 'Security Question');" onblur="field_blur(this, 'Security Question');" class="Security Question" />
 		<label for="answer">Answer:</label><input type="Answer" name="Answer" value="" onFocus="field_focus(this, 'Answer');" onblur="field_blur(this, 'Answer');" class="Answer" />
 
+		<fieldset> <!-- Preferences -->
+		<legend>What are your preferences?</legend>      
+		<p align = "left"><input type="checkbox" name="cuisine" value="American">American<br></p>
+		<p align = "left"><input type="checkbox" name="cuisine" value="Mexican">Mexican<br></p>    
+		<p align = "left"><input type="checkbox" name="cuisine" value="Chinese">Chinese<br></p>
+		<p align = "left"><input type="checkbox" name="cuisine" value="Japanese">Japanese<br></p>      
+		<p align = "left"><input type="checkbox" name="cuisine" value="Thai">Thai<br></p>      
+		<p align = "left"><input type="checkbox" name="cuisine" value="Italian">Italian<br></p>      
+		<p align = "left"><input type="checkbox" name="cuisine" value="Indian">Indian<br></p>  
+		<p align = "left"><input type="checkbox" name="cuisine" value="Greek">Greek<br></p>      
+		<br>      
+		</fieldset>      
+		
 		<a href="userPage.html"><div id="btn2"><center>Submit</center></div></a> <!-- End Submit -->
 
 		</div> <!-- End Box -->
-
 		</form>
-    
     </body>
 </html>
