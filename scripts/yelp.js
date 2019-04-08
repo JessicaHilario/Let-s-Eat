@@ -1,7 +1,7 @@
 'use strict';
 
 
-function printSearch(e)
+/*function printSearch(e)
 {
 	var search = document.getElementById("input").value;
 	document.getElementById("container").innerHTML = search;
@@ -15,7 +15,7 @@ if(search.attachEvent)
 else
 {
 	search.addEventListener("submit", printSearch);
-}
+}*/
 const yelp = require('yelp-fusion');
 
 // Place holder for Yelp Fusion's API Key. Grab them
@@ -25,7 +25,7 @@ const apiKey = 'p8eXXM3q_ks6WY_FWc2KhV-EmLhSpbJf0P-SATBhAIM4dNCgsp3sH8ogzJPezOT6
 function yelpSearch(e, request)
 {
 	const searchRequest = {
-	  term: request,
+	  term: "Mexican",
 	  location: 'huntington beach, ca'
 	};
 
