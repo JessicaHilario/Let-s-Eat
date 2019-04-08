@@ -9,6 +9,15 @@
         <title>Let's Eat Sign In Page</title>
     	<!---Centers the logo---> 
    		<style> 
+   			form {
+			  /* Just to center the form on the page */
+			  margin: 0 auto;
+			  width: 400px;
+			  /* To see the outline of the form */
+			  padding: 1em;
+			  border: 1px solid #CCC;
+			  border-radius: 1em;
+			}
 			img {
 			display: block;
 			margin-left: auto;
@@ -20,7 +29,7 @@
     </head>
 
     <body>
-    	<a href="homePage.html">
+    	<a href="defaultPage.html">
     	<img
 	 	src="./images/ACTUALLOGO.png"
 	 	alt="Let's Eat Logo">
@@ -30,15 +39,15 @@
 
 		<form method="post" action="index.html">
 		<div class="box">
-		<h1><center>Sign In Page</center></h1>
+		<h1><center>Sign In</center></h1>
 
 		<center><input type="email" name="email" value="email" onFocus="field_focus(this, 'email');" onblur="field_blur(this, 'email');" class="email" /></center>
 
 		<center><input type="password" name="email" value="email" onFocus="field_focus(this, 'email');" onblur="field_blur(this, 'email');" class="email" /></center>
 
-		<a href="#"><div class="btn"><center>Sign In</center></div></a> <!-- End Btn -->
+		<a href="userPage.html"><div class="btn"><center>Sign In</center></div></a> <!-- End Btn -->
 
-		<a href="#"><div id="btn2"><center>Sign Up</center></div></a> <!-- End Btn2 -->
+		<a href="signUpPage.html"><div id="btn2"><center>Sign Up</center></div></a> <!-- End Btn2 -->
 
 		</div> <!-- End Box -->
 
