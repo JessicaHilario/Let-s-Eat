@@ -1,11 +1,10 @@
-
 <!DOCTYPE html>
 <html>
     <head>
         <meta charset="UTF-8">
-<<<<<<< HEAD
 
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	    
         <!-- Imports the css for the top navigation bar -->
         <link rel="stylesheet" href="./css/navbar.css">       
 
@@ -23,6 +22,8 @@
             border: 3px solid #555;
         }
         </style>
+	    
+	<!---Title of webpage--->
         <title>Let's Eat</title>
     </head>
     
@@ -32,11 +33,12 @@
     </script>
     <body>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">        
-        <title>Let's Eat Default Page</title>
+        <title>Let's Eat</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <style>
-		.mySlides {display:none;} /* idk */
+	    	/* Style the topnav bar */
+		.mySlides {display:none;}
 		.topnav {
 			background-color: #333;
 			overflow: hidden;
@@ -72,14 +74,16 @@
     </head>
     	
     <body>
+	<!---Top navigation bar--->
     	<div class="topnav">
 			<a class="active" href="#homepage">Default Page</a>
 			<a href="signInPage.html">Sign in</a>
 			<img
-	 			src="ACTUALLOGO.png"
+	 			src="./images/ACTUALLOGO.png"
 	 			alt="Let's Eat Logo">
     	</div>
     	
+	<!---List of cuisine images--->
     	<div class="w3-content w3-display-container">
 		<img class="mySlides" src="./images/img_american.jpg" style="width:100%" style="height:100%">
 	  	<img class="mySlides" src="./images/img_chinese.jpg" style="width:100%" style="height:100%">
@@ -89,7 +93,8 @@
 	  	<button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
 	  	<button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
 		</div>
-
+	    
+	<!---Cycles through images--->
 	<script>
 		var slideIndex = 1;
 		showDivs(slideIndex);

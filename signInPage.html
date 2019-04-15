@@ -6,7 +6,9 @@
 
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         
-        <title>Let's Eat Sign In Page</title>
+	<!---Title of webpage-->
+        <title>Let's Eat</title>
+	    
     	<!---Centers the logo---> 
    		<style> 
    			form {
@@ -29,31 +31,29 @@
     </head>
 
     <body>
+	<!---Makes logo clickable, redirects to defaultPage.html--->
     	<a href="defaultPage.html">
     	<img
 	 	src="./images/ACTUALLOGO.png"
 	 	alt="Let's Eat Logo">
     	</a>
-    	    	
+    	
+	<!---Formats the sign in box--->
     	<link href='https://fonts.googleapis.com/css?family=Open+Sans:700,600' rel='stylesheet' type='text/css'>
-
-		<form method="post" action="index.html">
-		<div class="box">
+	<form method="post" action="index.html">
+	<div class="box">
 		<h1><center>Sign In</center></h1>
-
 		<center><input type="email" name="email" value="email" onFocus="field_focus(this, 'email');" onblur="field_blur(this, 'email');" class="email" /></center>
-
 		<center><input type="password" name="email" value="email" onFocus="field_focus(this, 'email');" onblur="field_blur(this, 'email');" class="email" /></center>
 
-		<a href="userPage.html"><div class="btn"><center>Sign In</center></div></a> <!-- End Btn -->
+		<!---Redirects user to userPage.html if Sign In is clicked--->
+		<a href="userPage.html"><div class="btn"><center>Sign In</center></div></a>
 
-		<a href="signUpPage.html"><div id="btn2"><center>Sign Up</center></div></a> <!-- End Btn2 -->
-
-		</div> <!-- End Box -->
-
-		</form>
-
+		<!---Redirects user to signUpPage.html if Sign Up is clicked--->
+		<a href="signUpPage.html"><div id="btn2"><center>Sign Up</center></div></a>
+	</div>
+	</form>
+	    	<!---Forgot password link---IN PROCESS--->
 		<p><center>Forgot your password? <u style="color:#f1c40f;">Click Here!</u></center></p>
-    
     </body>
 </html>
