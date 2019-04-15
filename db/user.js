@@ -6,8 +6,13 @@ var usersSchema = new Schema({
     firstName: String,
     lastName: String,
     email: String,
-    
+    password: String,
+    city: String,
+    state: String,
+    sQuestion: String,
+    sAnswer: String
 });
+
 //To use the schema definition (Table)
 var Blog = mongoose.model('Blog', blogSchema);
 
