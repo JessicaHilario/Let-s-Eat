@@ -18,5 +18,8 @@
   "homepage": "https://github.com/JessicaHilario/Let-s-Eat#readme",
   "dependencies": {
     "yelp-fusion": "^2.2.1"
-  }
+  },
+  "keywords": [
+    "electron"
+  ]
 }
