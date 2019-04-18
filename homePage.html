@@ -63,11 +63,15 @@
     </div>
     
     <body>
-    	<div id = "container">
-    		<div id="output">
-    			<input type="text" name="filter" placeholder="Search...">
-    		</div>
-    	</div>
-    	<script data-main="scripts/yelp" src="scripts/require.js"></script>
+    	<div id="container">
+	    	<form id = "search">
+	    		<input id="input" type="text" name="in" value="Search..." />
+	    		<br>
+	    		<input id="location" type="text" name ="in" value="Location..." />
+	    		<br>
+	    		<button id = "submit" type="submit">Submit</button>
+	    	</form>
+	    </div>
+    	<script data-main="scripts/yelp.js" src="scripts/require.js"></script>
     </body>
 </html>
