@@ -46,6 +46,22 @@
   		max-height:7%;
 	}
 	
+	.button{
+			background-color: #333
+			overflow: hidden;
+			}
+	
+		.button a{
+			background-color: #333;
+			border: none;
+			color: white;
+			padding: 5px 15px;
+			text-align: center;
+			text-decoration: none;
+			display: inline-block;
+			font-size: 16px;
+			}
+	
     </style>
     </head>
     
@@ -63,15 +79,29 @@
     </div>
     
     <body>
+<!-- <<<<<<< HEAD -->
     	<div id="container">
 	    	<form id = "search">
-	    		<input id="input" type="text" name="in" value="Search..." />
+	    		<input id="input" type="text" name="in" placeholder="Search..." />
 	    		<br>
-	    		<input id="location" type="text" name ="in" value="Location..." />
+	    		<input id="location" type="text" name ="in" placeholder="Location..." />
 	    		<br>
 	    		<button id = "submit" type="submit">Submit</button>
 	    	</form>
 	    </div>
+
     	<script data-main="scripts/yelp.js" src="scripts/require.js"></script>
+<!-- =======
+    	<div id = "container">
+    		<div id="output">
+    			<input type="text" name="filter" placeholder="Search...">
+    		</div>
+    	</div>
+    	<script data-main="scripts/yelp" src="scripts/require.js"></script>
+		
+		<div class="button">
+			<a href='Filter.html'>Advance Search</a>
+		</div>
+>>>>>>> 874f1a35ae76c5919e859a728ac58ebac4a7038d -->
     </body>
 </html>
